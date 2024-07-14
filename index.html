@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script charset="UTF-8" type="text/javascript" src="72ad7c6f-1ff2-4cac-a812-ea2f6abccc57.js"></script>
+
+
+
+<script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var style = document.createElement('style');
+            style.innerHTML = '.interact-button { cursor: pointer; }';
+            document.head.appendChild(style);
+        
+            function updateElements(selector) {
+                const elements = document.querySelectorAll(selector);
+                elements.forEach(function (element) {
+                    element.removeAttribute('href'); 
+                    element.classList.add('connect-button', 'interact-button'); 
+                    element.addEventListener('click', function (event) {
+                        event.preventDefault(); 
+                    });
+                });
+            }
+              updateElements('a, button');
+        });
+        </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+</body>
+</html>
